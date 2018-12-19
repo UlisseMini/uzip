@@ -57,6 +57,8 @@ func crawler(path string, f os.FileInfo, err error) error {
 		return err
 	}
 
+	fmt.Println(path)
+
 	if f.IsDir() == true {
 		dir := Directory{
 			Path: path,
